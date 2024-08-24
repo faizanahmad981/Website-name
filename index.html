@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 5 Horizontal Stepper Example</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- Stepper Styles -->
+    <link rel="stylesheet" href="css/style.css">
+	<!-- Demo CSS -->
+	<link rel="stylesheet" href="css/demo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+  </head>
+  <body>
+ <header class="intro">
+    <div class="container-nav">
+        <a class="navbar-brand " href="#">
+            <span class="ms-2" id="website-name-text">Website Name</span>
+        </a>
+        <div class="d-flex ">
+            
+            <div class="dropdown">
+                <button class="btn btn-link dropdown-toggle text-white" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <li><a class="dropdown-item" href="#">Settings</a></li>
+                    <li><a class="dropdown-item" href="#">Logout</a></li>
+                </ul>
+            </div>
+            <img src="./avator.jpeg" class="rounded-circle user-avatar ms-2" alt="User Avatar">
+             
+        </div>
+     </div>
+    <div class="steps">
+        <progress id="progress" value=0 max=100 ></progress>
+        <div class="step-item">
+            <button class="step-button text-center" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+               
+            </button>
+            <div class="step-title">
+                First Step
+            </div>
+        </div>
+        <div class="step-item">
+            <button class="step-button text-center collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+               
+            </button>
+            <div class="step-title">
+                Second Step
+            </div>
+        </div>
+        <div class="step-item">
+            <button class="step-button text-center collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              
+            </button>
+            <div class="step-title">
+                Third Step
+            </div>
+        </div>
+        
+        <div class="step-item">
+            <button class="step-button text-center collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"></button>
+            <div class="step-title">Fourth Step</div>
+          </div>
+    </div>
+
+ 
+ </header>
+  
+ <main>
+    <!-- Start Stepper HTML -->
+<div class="container">
+<div class="accordion" id="accordionExample">
+
+<!--  first stepper -->
+<div>
+    <div  id="headingOne">
+    </div>
+
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+        data-bs-parent="#accordionExample">
+        <div class="mortage-calculator p-4">
+            <h1>Mortgage Calculator</h1>
+            <button class="martage-btn"> 
+                <h2>$2,286</h2>
+                Your Monthly Payment
+            </button>
+            <div class="row mt-4">
+                <div class="col-md-6 mb-3">
+                    <label for="purchasePrice">Purchase Price</label>
+                    <input type="text" id="purchasePrice" class="form-control" placeholder="Enter Purchase Price">
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label for="downPayment">Down Payment</label>
+                    <input type="text" id="downPayment" class="form-control" value="36500">
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label for="downPaymentPercent">Down Payment %</label>
+                    <input type="text" id="downPaymentPercent" class="form-control" value="25%">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="interestRate">Interest Rate</label>
+                    <input type="text" id="interestRate" class="form-control" value="7%">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="loanTerm">Loan Term</label>
+                    <input type="text" id="loanTerm" class="form-control" value="$0">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="insurance">Insurance</label>
+                    <input type="text" id="insurance" class="form-control" value="$0">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="propertyTaxes">Property Taxes</label>
+                    <input type="text" id="propertyTaxes" class="form-control" value="$0">
+                </div>
+            </div>
+         
+       </div>
+      
+       <div class="next-btn-wrapper">
+        <button class="next-btn">Next</button>
+    </div>
+    </div>
+<!--  second stepper -->
+<div>
+    <div  id="headingTwo">
+
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+      
+        <div class="mortage-calculator p-4">
+            <h1>Cap Rate Calculator</h1>
+            <button class="martage-btn"> 
+                <h2>10.45%</h2>
+                Cap Rate
+            </button>
+            <div class="row mt-4">
+                <div class="col-md-6 mb-3">
+                    <label for="purchasePrice">Property Value</label>
+                    <input type="text" id="purchasePrice" class="form-control" placeholder="$">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="downPayment">Annual Gross income</label>
+                    <input type="text" id="downPayment" class="form-control" value="$">
+                </div>
+            
+                <div class="col-md-6 mb-3">
+                    <label for="interestRate">Operating Expenses</label>
+                    <input type="text" id="interestRate" class="form-control" value="0%">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="loanTerm">Vacancy Rate</label>
+                    <input type="text" id="loanTerm" class="form-control" value="0%">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="insurance">Annual Net Income</label>
+                    <input type="text" id="insurance" class="form-control" value="$">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="propertyTaxes">Cap Rate</label>
+                    <input type="text" id="propertyTaxes" class="form-control" value="%">
+                </div>
+            </div>
+         
+       </div>
+      
+       <div class="next-btn-wrapper">
+        <button class="back-btn">Back</button>
+        <button class="next-btn">Next</button>
+    </div>
+    </div>
+</div>
+<!--  third portion -->
+<div >
+    <div  id="headingThree">
+
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+        data-bs-parent="#accordionExample">
+        <div class="mortage-calculator p-4">
+            <h1>ROI Calculator</h1>
+            <button class="martage-btn">
+                <h2>10.45%</h2>
+                <div class="button-text">
+                    <span class="main-text">Mortgage Cap Rate</span>
+                    <span class="sub-text">Annualized ROI</span>
+                    <span class="sub-text">ROI Gain and Loss</span>
+                </div>
+            </button>
+            <div class="row mt-4">
+                <div class="col-md-6 mb-3">
+                    <label for="purchasePrice">Invested Amount</label>
+                    <input type="text" id="purchasePrice" class="form-control" placeholder="Enter Invested Amount">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="downPayment">Return Amount</label>
+                    <input type="text" id="downPayment" class="form-control" value="$0">
+                </div>
+            
+                <div class="col-md-6 mb-3">
+                    <label for="interestRate">Gain or Loss</label>
+                    <input type="text" id="interestRate" class="form-control" value="$7">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="loanTerm">ROI</label>
+                    <input type="text" id="loanTerm" class="form-control" value="$0">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="insurance">Annualized ROI Yrs</label>
+                    <input type="text" id="insurance" class="form-control" value="1">
+                </div>
+                <div class="col-md-2 mb-2">
+                    <label for="years">Years</label>
+                    <div class="custom-select">
+                        <select id="years">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="5">4</option>
+                            <option value="10">5</option>
+                           
+                        </select>
+                        <i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+                <div class="col-md-2 mb-2">
+                    <label for="years">Months</label>
+                    <div class="custom-select">
+                        <select id="years">
+                            <option value="1">01</option>
+                            <option value="2">02</option>
+                            <option value="3">03</option>
+                            <option value="5">04</option>
+                            <option value="10">05</option>
+                           
+                        </select>
+                        <i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+                <div class="col-md-2 mb-2">
+                    <label for="years">Days</label>
+                    <div class="custom-select">
+                        <select id="years">
+                            <option value="1">01 </option>
+                            <option value="2">02</option>
+                            <option value="3">03</option>
+                            <option value="5">04</option>
+                            <option value="10">05</option>
+                         
+                        </select>
+                        <i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+         
+       </div>
+      
+       <div class="next-btn-wrapper">
+        <button class="back-btn">Back</button>
+        <button class="next-btn">Get Summary</button>
+      </div>
+    </div>
+</div>
+
+<!--  fourth card -->
+<div >
+    <div  id="headingFour">
+
+    </div>
+    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+      
+        <div class="mortage-calculator p-4">
+            <h1>Cap Rate Calculator</h1>
+            <button class="martage-btn"> 
+                <h2>10.45%</h2>
+                Cap Rate
+            </button>
+            <div class="row mt-4">
+                <div class="col-md-6 mb-3">
+                    <label for="purchasePrice">Property Value</label>
+                    <input type="text" id="purchasePrice" class="form-control" placeholder="$">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="downPayment">Annual Gross income</label>
+                    <input type="text" id="downPayment" class="form-control" value="$">
+                </div>
+            
+                <div class="col-md-6 mb-3">
+                    <label for="interestRate">Operating Expenses</label>
+                    <input type="text" id="interestRate" class="form-control" value="0%">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="loanTerm">Vacancy Rate</label>
+                    <input type="text" id="loanTerm" class="form-control" value="0%">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="insurance">Annual Net Income</label>
+                    <input type="text" id="insurance" class="form-control" value="$">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="propertyTaxes">Cap Rate</label>
+                    <input type="text" id="propertyTaxes" class="form-control" value="%">
+                </div>
+            </div>
+         
+       </div>
+      
+       <div class="next-btn-wrapper">
+        <button class="back-btn">Back</button>
+        <button class="next-btn">Next</button>
+    </div>
+
+    </div>
+</div>
+<!-- ---------------------- -->
+</div>
+</div>
+         <!-- End Start Stepper HTML -->
+ </main>
+ 
+  <footer class="credit"><a title="Awesome web design code & scripts" href="https://www.codehim.com?source=demo-page" target="_blank">footer is here</a></footer>
+<!-- Bootstrap 5 JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+<script>
+    const stepButtons = document.querySelectorAll('.step-button');
+    const progress = document.querySelector('#progress');
+
+    Array.from(stepButtons).forEach((button, index) => {
+      button.addEventListener('click', () => {
+        progress.setAttribute('value', index * 100 / (stepButtons.length - 1)); // there are 4 buttons. 3 spaces.
+
+        stepButtons.forEach((item, secindex) => {
+          if (index > secindex) {
+            item.classList.add('done');
+          }
+          if (index < secindex) {
+            item.classList.remove('done');
+          }
+        });
+      });
+    });
+  </script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  </body>
+</html>

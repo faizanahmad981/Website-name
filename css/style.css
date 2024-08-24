@@ -1,0 +1,175 @@
+:root {
+    --prm-color: #0381ff;
+    --prm-gray: #b1b1b1;
+}
+
+
+.container-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 100%;
+}
+
+#website-name-text {
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+    font-family: 'Inter_18pt-Bold';
+}
+
+.user-avatar {
+    width: 40px;
+    height: 40px;
+}
+
+.dropdown-toggle::after {
+    margin-left: 2px;
+}
+
+
+/* CSS */
+.steps {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2.75rem;
+    margin-top: 4.534rem;
+    position: relative;
+}
+
+.step-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+   /*  background-color: var(--prm-gray);
+    transition: .4s; */
+}
+
+.step-button[aria-expanded="true"] {
+    width: 60px;
+    height: 60px;
+   /*  background-color: var(--prm-color); */
+    color: #fff;
+}
+
+.done {
+   /*  background-color: var(--prm-color); */
+    color: #fff;
+}
+
+.step-item {
+    z-index: 10;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+#progress {
+  -webkit-appearance:none;
+    position: absolute;
+    width: 95%;
+    z-index: 5;
+    height: 10px;
+    margin-left: 18px;
+    margin-bottom: 18px;
+}
+
+/* to customize progress bar */
+#progress::-webkit-progress-value {
+    background-color: var(--prm-color);
+    transition: .5s ease;
+}
+
+#progress::-webkit-progress-bar {
+    background-color: var(--prm-gray);
+
+}
+
+/* -------------------------------- */
+
+.mortage-calculator {
+    width: 80%;
+    max-width: 784px;
+    margin: 32px auto;
+    border: 2px solid #D9D9DF;
+    border-radius: 7px;
+    position: relative;
+    background-color: #0dd2f0;
+    padding: 20px;
+}
+
+.mortage-calculator h1 {
+    margin-left: 26px;
+    margin-top: 32px;
+}
+
+.martage-btn {
+    background-color: #0061BA;
+    width: 100%;
+    height: 107px;
+    border-radius: 15px;
+    border: none;
+    margin-top: 32px;
+    color: white;
+}
+
+.dropdown-menu {
+    min-width: 150px;
+}
+.next-btn-wrapper {
+    width: 100%;
+    margin-top: 16px;
+    text-align: right; 
+}
+
+.next-btn {
+    width: 109px;
+    height: 55px;
+    background-color: #0061BA;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    line-height: 55px;
+    margin-right: 328px;
+}
+
+.back-btn {
+    width: 109px;
+    height: 55px;
+    background-color: #D9D9DF;
+    color: black;
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    line-height: 55px;
+    
+}
+
+
+.custom-select {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.custom-select select {
+    width: 100%;
+    height: 38px;
+    padding: 5px 40px 5px 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    appearance: none; 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.custom-select i {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none; 
+}
