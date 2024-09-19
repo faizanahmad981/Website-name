@@ -1,7 +1,5 @@
 # Stepper practice One-Page Website
 
-**Project Banner**  
-![1](https://github.com/user-attachments/assets/ebddf6de-015e-4299-b04f-dc248aadb60c)
 
 
 ## Overview
@@ -9,7 +7,7 @@
 The **Website name** website is a responsive one-page project built using **HTML**, **CSS**, and **Bootstrap**. This project demonstrates a modern and elegant design, suitable for #
 small business websites Practice of stepper  .
 
----
+
 
 ## Technologies Used
 
@@ -18,7 +16,9 @@ small business websites Practice of stepper  .
 - Bootstrap 5
 - Responsive Design
 
----
+**Project Banner**  
+![1](https://github.com/user-attachments/assets/ebddf6de-015e-4299-b04f-dc248aadb60c)
+
 
 ## Features
 
